@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GxxBjfFXBInrRSWJLHCIei30e6R8Hg3T+75IzjxoBmmzQALsp8yMTl3lwAHZbV+O9gbWmOiqjUlq1hQBFR67hA==",
+  "dgSpecHash": "UfxZzGE6mX1rqtCIzLrQ+OiemR7V/AiOgOWRoLkzAyF/XZwCBgBR4tY0iBk/P3v1+W9TF8Ymzumm3Ca7uyQUbQ==",
   "success": true,
-  "projectFilePath": "C:\\Training\\WeightFoodTracker\\ConsumerAPI\\ConsumerAPI.csproj",
+  "projectFilePath": "c:\\Training\\WeightFoodTracker\\ConsumerAPI\\ConsumerAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VJMbigboss\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\VJMbigboss\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",

@@ -20,7 +20,7 @@ namespace ConsumerAPI.Services
                 //
                 // This code uses an SqlCommand based on the SqlConnection.
                 //
-                string sqlStmt = String.Format("Select ConsumerId, Name,Age,DOB, Gender,Weight,Email,Address,BreakFastId,LunchId,DinnerId,Calories  from Consumer Where ConsumerId ={0}", consumerId);
+                string sqlStmt = String.Format("Select ConsumerId, Name,Age,DOB, Gender,Weight,Email,Address,DietId,BreakFastId,LunchId,DinnerId,Calories from Consumer Where ConsumerId ={0}", consumerId);
                 //string sqlStmt1 = "Select ConsumerId, Name, Gender, DOB from Consumer Where ConsumerId = " + ConsumerId;
                 //string sqlStmt2 = $"Select ConsumerId, Name, Gender, DOB from Consumer Where ConsumerId = {ConsumerId}";
                 Console.WriteLine(sqlStmt);
@@ -42,10 +42,11 @@ namespace ConsumerAPI.Services
                             s.Weight = reader.GetInt32(5);
                             s.Email = reader.GetString(6);
                             s.Address = reader.GetString(7);
-                            s.BreakFastId = reader.GetInt32(8);
-                            s.LunchId = reader.GetInt32(9);
-                            s.DinnerId = reader.GetInt32(10);
-                            s.Calories = reader.GetInt32(11);
+                            s.DietId = reader.GetInt32(8);
+                            s.BreakFastId = reader.GetInt32(9);
+                            s.LunchId = reader.GetInt32(10);
+                            s.DinnerId = reader.GetInt32(11);
+                            s.Calories = reader.GetInt32(12);
 
 
 
@@ -72,8 +73,8 @@ namespace ConsumerAPI.Services
             {
                 con.Open();
 
-                string sqlStmt = String.Format("Select ConsumerId, Name,Age,DOB, Gender,Weight, Email,Address,BreakFastId,LunchId,DinnerId,Calories  from Consumer");
-
+                string sqlStmt = String.Format("Select ConsumerId, Name,Age,DOB, Gender,Weight, Email,Address,DietId,BreakFastId,LunchId,DinnerId,Calories  from Consumer");
+                Console.WriteLine(sqlStmt);
                 using (SqlCommand command = new SqlCommand(sqlStmt, con))
                 {
                     using (SqlDataReader reader = command.ExecuteReader())
@@ -89,10 +90,12 @@ namespace ConsumerAPI.Services
                             s.Weight = reader.GetInt32(5);
                             s.Email = reader.GetString(6);
                             s.Address = reader.GetString(7);
-                            s.BreakFastId = reader.GetInt32(8);
-                            s.LunchId = reader.GetInt32(9);
-                            s.DinnerId = reader.GetInt32(10);
-                            s.Calories = reader.GetInt32(11);
+                            s.DietId = reader.GetInt32(8);
+                            s.BreakFastId = reader.GetInt32(9);
+                            s.LunchId = reader.GetInt32(10);
+                            s.DinnerId = reader.GetInt32(11);
+                            s.Calories = reader.GetInt32(12);
+                            
 
 
 
@@ -119,7 +122,7 @@ namespace ConsumerAPI.Services
 
                 //string sqlStmt = $"INSERT INTO [dbo].[Consumer] ([ConsumerId],[Name],[DOB],[Gender], [City], [State]) VALUES ({newConsumer.ConsumerId},'{newConsumer.Name}','{newConsumer.DOB}', '{newConsumer.Gender}', '{newConsumer.City}', '{newConsumer.State}')";
 
-                string sqlStmt = $"INSERT INTO [dbo].[Consumer] ([Name],[Age],[DOB], [Gender],[Weight], [Email],[Address],[BreakFastId],[LunchId],[DinnerId],[Calories]) OUTPUT INSERTED.ConsumerId VALUES ('{newConsumer.Name}','{newConsumer.Age}','{newConsumer.DOB.ToString("yyyy-MM-dd")}', '{newConsumer.Gender}','{newConsumer.Weight}','{newConsumer.Email}','{newConsumer.Address}','{newConsumer.BreakFastId}','{newConsumer.LunchId}','{newConsumer.DinnerId}','{newConsumer.Calories}')";
+                string sqlStmt = $"INSERT INTO [dbo].[Consumer] ([Name],[Age],[DOB], [Gender],[Weight], [Email],[Address],[DietId],[BreakFastId],[LunchId],[DinnerId],[Calories]) OUTPUT INSERTED.ConsumerId VALUES ('{newConsumer.Name}','{newConsumer.Age}','{newConsumer.DOB.ToString("yyyy-MM-dd")}', '{newConsumer.Gender}','{newConsumer.Weight}','{newConsumer.Email}','{newConsumer.Address}','{newConsumer.DietId}','{newConsumer.BreakFastId}','{newConsumer.LunchId}','{newConsumer.DinnerId}','{newConsumer.Calories}')";
 
                 Console.WriteLine(sqlStmt);
 
@@ -149,6 +152,7 @@ namespace ConsumerAPI.Services
                     Weight = '{updConsumer.Weight}',
                     Email = '{updConsumer.Email}',
                     Address = '{updConsumer.Address}',
+                    DietId = '{updConsumer.DietId}',
                     BreakFastId = '{updConsumer.BreakFastId}',
                     LunchId = '{updConsumer.LunchId}',
                     DinnerId = '{updConsumer.DinnerId}',
@@ -183,7 +187,7 @@ namespace ConsumerAPI.Services
                 using (SqlCommand command = new SqlCommand(sqlStmt, con))
                 {
                     int numOfRows = command.ExecuteNonQuery();
-                    if (numOfRows >0)
+                    if (numOfRows > 0)
                     {
                         return true;
                     }

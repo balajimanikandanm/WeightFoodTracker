@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Training\\WeightFoodTracker\\ConsumerAPITests\\ConsumerAPITests.csproj": {}
+    "c:\\Training\\WeightFoodTracker\\ConsumerAPITests\\ConsumerAPITests.csproj": {}
   },
   "projects": {
-    "C:\\Training\\WeightFoodTracker\\ConsumerAPITests\\ConsumerAPITests.csproj": {
+    "c:\\Training\\WeightFoodTracker\\ConsumerAPITests\\ConsumerAPITests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Training\\WeightFoodTracker\\ConsumerAPITests\\ConsumerAPITests.csproj",
+        "projectUniqueName": "c:\\Training\\WeightFoodTracker\\ConsumerAPITests\\ConsumerAPITests.csproj",
         "projectName": "ConsumerAPITests",
-        "projectPath": "C:\\Training\\WeightFoodTracker\\ConsumerAPITests\\ConsumerAPITests.csproj",
+        "projectPath": "c:\\Training\\WeightFoodTracker\\ConsumerAPITests\\ConsumerAPITests.csproj",
         "packagesPath": "C:\\Users\\VJMbigboss\\.nuget\\packages\\",
-        "outputPath": "C:\\Training\\WeightFoodTracker\\ConsumerAPITests\\obj\\",
+        "outputPath": "c:\\Training\\WeightFoodTracker\\ConsumerAPITests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\VJMbigboss\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Training\\WeightFoodTracker\\ConsumerAPI\\ConsumerAPI.csproj": {
-                "projectPath": "C:\\Training\\WeightFoodTracker\\ConsumerAPI\\ConsumerAPI.csproj"
+              "c:\\Training\\WeightFoodTracker\\ConsumerAPI\\ConsumerAPI.csproj": {
+                "projectPath": "c:\\Training\\WeightFoodTracker\\ConsumerAPI\\ConsumerAPI.csproj"
               }
             }
           }
@@ -96,14 +96,14 @@
         }
       }
     },
-    "C:\\Training\\WeightFoodTracker\\ConsumerAPI\\ConsumerAPI.csproj": {
+    "c:\\Training\\WeightFoodTracker\\ConsumerAPI\\ConsumerAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Training\\WeightFoodTracker\\ConsumerAPI\\ConsumerAPI.csproj",
+        "projectUniqueName": "c:\\Training\\WeightFoodTracker\\ConsumerAPI\\ConsumerAPI.csproj",
         "projectName": "ConsumerAPI",
-        "projectPath": "C:\\Training\\WeightFoodTracker\\ConsumerAPI\\ConsumerAPI.csproj",
+        "projectPath": "c:\\Training\\WeightFoodTracker\\ConsumerAPI\\ConsumerAPI.csproj",
         "packagesPath": "C:\\Users\\VJMbigboss\\.nuget\\packages\\",
-        "outputPath": "C:\\Training\\WeightFoodTracker\\ConsumerAPI\\obj\\",
+        "outputPath": "c:\\Training\\WeightFoodTracker\\ConsumerAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\VJMbigboss\\AppData\\Roaming\\NuGet\\NuGet.Config",

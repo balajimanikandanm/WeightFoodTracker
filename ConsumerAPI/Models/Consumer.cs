@@ -35,6 +35,10 @@ namespace ConsumerAPI.Models
 
         public string Address { get; set; }
 
+
+        public int DietId { get; set; }
+
+
         public int BreakFastId { get; set; }
 
         public int LunchId { get; set; }

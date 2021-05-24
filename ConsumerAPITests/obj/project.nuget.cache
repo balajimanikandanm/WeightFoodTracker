@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dDZQC7Z0Gh3fgULwxgncOkYaZqaX+iq8ke7ZKByQtbkK+AxcvC2Z2qQkhsdof8sdOhbY6kYE3LtnNZcM/z4gMQ==",
+  "dgSpecHash": "jdOermID0aKu++iJ5hrGbnxY2xNzX8igEn1fLfxHmC+6duZRJw60pfCRS+QA80tpdVJX/0sUumFbHvblIHx61g==",
   "success": true,
-  "projectFilePath": "C:\\Training\\WeightFoodTracker\\ConsumerAPITests\\ConsumerAPITests.csproj",
+  "projectFilePath": "c:\\Training\\WeightFoodTracker\\ConsumerAPITests\\ConsumerAPITests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\VJMbigboss\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
     "C:\\Users\\VJMbigboss\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

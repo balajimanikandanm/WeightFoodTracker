@@ -4,7 +4,6 @@ using Newtonsoft.Json;
 using ConsumerAPITests.Models;
 using System.Globalization;
 using ConsumerAPI.Services;
-
     
 
 namespace ConsumerAPITests
@@ -58,7 +57,7 @@ namespace ConsumerAPITests
         [Test]
         [TestCase(2)]
         [TestCase(3)]
-        [TestCase(4)]
+        [TestCase(5)]
         public void GetConsumerTest(int consumerId)
         {
             var consumer = apiHelper.GetConsumerAsync(consumerId).Result;
@@ -70,17 +69,18 @@ namespace ConsumerAPITests
         public void InsertconsumerTest()
         {
             var newConsumer = new Consumer();
-            newConsumer.Name = "Ramesh";
-            newConsumer.Age = 20;
-            newConsumer.DOB = DateTime.ParseExact("2000-05-20", "yyyy-MM-dd", CultureInfo.InvariantCulture);
+            newConsumer.Name = "Ashwin";
+            newConsumer.Age = 27;
+            newConsumer.DOB = DateTime.ParseExact("1994-05-20", "yyyy-MM-dd", CultureInfo.InvariantCulture);
             newConsumer.Gender = "M";
             newConsumer.Weight = 70;
-            newConsumer.Email = "rr@gmail.com";
-            newConsumer.Address = "Tiruchi";
+            newConsumer.Email = "ashwin@gmail.com";
+            newConsumer.Address = "Chennai";
             newConsumer.BreakFastId = 2;
+            newConsumer.DietId = 2;
             newConsumer.LunchId = 2;
             newConsumer.DinnerId = 2;
-            newConsumer.Calories = 56;
+            newConsumer.Calories = 83;
 
 
 
@@ -100,13 +100,14 @@ namespace ConsumerAPITests
 
             //Updated Consumer
             var updConsumer = new Consumer();
-            updConsumer.Name = "Ramesh";
-            updConsumer.Age = 20;
-            updConsumer.DOB = DateTime.ParseExact("2000-05-20", "yyyy-MM-dd", CultureInfo.InvariantCulture);
+            updConsumer.Name = "Ashwin Kumar";
+            updConsumer.Age = 26;
+            updConsumer.DOB = DateTime.ParseExact("1995-05-20", "yyyy-MM-dd", CultureInfo.InvariantCulture);
             updConsumer.Gender = "M";
             updConsumer.Weight = 70;
-            updConsumer.Email = "rr@gmail.com";
-            updConsumer.Address = "Tiruchi";
+            updConsumer.Email = "ashwiney@gmail.com";
+            updConsumer.Address = "Coimbatore";
+            updConsumer.DietId = 5;
             updConsumer.BreakFastId = 2;
             updConsumer.LunchId = 2;
             updConsumer.DinnerId = 2;
